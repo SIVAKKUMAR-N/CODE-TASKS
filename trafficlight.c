@@ -8,7 +8,8 @@ printf("enter the green light duration:");
 scanf("%d",&yellow);
 printf("enter the yellow light duration:");
 scanf("%d",&green);
-int i;
+int i,j;
+for(j=0;j<3;j++){    
 printf("\nTraffic Light:RED");
 for(i=red;i>0;i--){
     printf("\nTime remaining: %d seconds",i);
@@ -24,5 +25,6 @@ for(i=green;i>0;i--){
     printf("\nTime remaining: %d seconds",i);
     sleep(1);
 }
+}    
 return 0;
 }
